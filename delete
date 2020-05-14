@@ -1,1 +1,71 @@
-
+01:12 ~ $ python3
+Python 3.8.0 (default, Nov 14 2019, 22:29:45) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sqlite3
+>>> db = "corrupt.sqlite"
+>>> conn = sqlite3.connect(db)
+>>> c = conn.cursor()
+>>> def delete_track(artist):
+...  def delete_track(Blame It on the Rain):
+  File "<stdin>", line 2
+    def delete_track(Blame It on the Rain):
+                           ^
+SyntaxError: invalid syntax
+>>>  def delete_track("Blame It on the Rain"):
+  File "<stdin>", line 1
+    def delete_track("Blame It on the Rain"):
+    ^
+IndentationError: unexpected indent
+>>> def delete_track("Blame It on the Rain"):
+  File "<stdin>", line 1
+    def delete_track("Blame It on the Rain"):
+                     ^
+SyntaxError: invalid syntax
+>>> 
+>>> ef delete_track("Milli Vanilli"):
+  File "<stdin>", line 1
+    ef delete_track("Milli Vanilli"):
+       ^
+SyntaxError: invalid syntax
+>>> def delete_track("Milli Vanilli"):
+  File "<stdin>", line 1
+    def delete_track("Milli Vanilli"):
+                     ^
+SyntaxError: invalid syntax
+>>> def delete_track(Milli Vanilli):
+  File "<stdin>", line 1
+    def delete_track(Milli Vanilli):
+                           ^
+SyntaxError: invalid syntax
+>>> def delete_track(Milli_Vanilli):
+... def delete_track("Milli_Vanilli"):
+  File "<stdin>", line 2
+    def delete_track("Milli_Vanilli"):
+    ^
+IndentationError: expected an indented block
+>>> def delete_track("Milli_Vanilli"):
+  File "<stdin>", line 1
+    def delete_track("Milli_Vanilli"):
+                     ^
+SyntaxError: invalid syntax
+>>> def delete_track(Blame_It_on_the_Rain):
+... import sqlite
+  File "<stdin>", line 2
+    import sqlite
+    ^
+IndentationError: expected an indented block
+>>> import sqlite
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'sqlite'
+>>> python3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'python3' is not defined
+>>> python 3
+  File "<stdin>", line 1
+    python 3
+           ^
+SyntaxError: invalid syntax
+>>> 
